@@ -243,3 +243,4 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+CaptchaGenerator/WebTesting/app/bower_components/*
