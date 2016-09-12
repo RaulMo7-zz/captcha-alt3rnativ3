@@ -10,8 +10,8 @@ namespace Provider
     {
         public Captcha Generate()
         {
-            int width = 512;
-            int height = 512;
+            int width = 200;
+            int height = 120;
 
             int y;
             var x = y = 10;

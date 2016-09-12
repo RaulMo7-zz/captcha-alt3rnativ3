@@ -1,1 +1,10 @@
-<p>This is the partial for view 1.</p>
+<form name="captchaForm" novalidate>
+    <img data-ng-src="data:image/png;base64,{{data.Base64}}">
+    <button ng-click="generateNewCaptcha()">REFRESH</button>
+    <button ng-click="validateCaptcha()" ng-disabled="captchaForm.$invalid">VALIDATE</button>
+    <ul>
+        <li ng-repeat="answer in data.Answers track by $index">
+            <input type="radio" ng-model="$parent.name" value="{{answer}}" required> {{answer}}
+        </li>
+    </ul>
+</form>
